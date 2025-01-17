@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">StayFit</string>
+    <string name="signup">Signup</string>
+    <string name="email">EMAIL</string>
+    <string name="password">Password</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="login">LOGIN</string>
+    <string name="username">USERNAME</string>
+    <string name="name">Name</string>
+    <string name="log_in">log in</string>
+    <string name="enter_the_password">Enter the password.</string>
+    <string name="messanger_app">Messanger App</string>
+    <string name="workout_guidelines_n_n_begin_at_a_beginner_level_and_progress_only_when_the_exercises_feel_comfortable_n_n_rest_for_1_2_minutes_between_exercises_n_n_for_beginners_complete_2_3_exercises_per_session_n_n_for_intermediates_complete_4_6_exercises_per_session_n_n_for_advanced_levels_complete_all_exercises_in_a_circuit_format_n_n_always_warm_up_for_5_10_minutes_before_starting_n_n_cool_down_and_stretch_after_your_workout_n_n_stay_hydrated_throughout">Workout Guidelines:\n\n• Begin at a beginner level and progress only when the exercises feel comfortable.\n\n• Rest for 1-2 minutes between exercises.\n\n• For beginners: complete 2-3 exercises per session.\n\n• For intermediates: complete 4-6 exercises per session.\n\n• For advanced levels: complete all exercises in a circuit format.\n\n• Always warm up for 5-10 minutes before starting.\n\n• Cool down and stretch after your workout.\n\n• Stay hydrated throughout.</string>
+    <string-array name="gender_array">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+</resources>

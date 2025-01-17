@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fitness_gradient_background"
+    tools:context=".MainActivity">
+
+    <!-- Top Bar with Frosted Glass Effect -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="#1A000000"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/instimg"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="8dp"
+                android:background="@drawable/circle_ripple"
+                android:tint="#00BCD4"
+                app:srcCompat="@drawable/i" />
+
+            <ImageView
+                android:id="@+id/logoutimg"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/circle_ripple"
+                android:src="@drawable/logout" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Guidelines Card -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/guidelinesCard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="#1A000000"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintBottom_toTopOf="@id/startButton">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Workout Guidelines"
+                    android:textColor="#00BCD4"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="16dp"/>
+
+                <TextView
+                    android:id="@+id/guidelinesText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:lineSpacingExtra="8dp"
+                    android:text="@string/workout_guidelines_n_n_begin_at_a_beginner_level_and_progress_only_when_the_exercises_feel_comfortable_n_n_rest_for_1_2_minutes_between_exercises_n_n_for_beginners_complete_2_3_exercises_per_session_n_n_for_intermediates_complete_4_6_exercises_per_session_n_n_for_advanced_levels_complete_all_exercises_in_a_circuit_format_n_n_always_warm_up_for_5_10_minutes_before_starting_n_n_cool_down_and_stretch_after_your_workout_n_n_stay_hydrated_throughout"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/startButton"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Start Workout"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="#00A8BC"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/MainUserRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/guidelinesCard" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
