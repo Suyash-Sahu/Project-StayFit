@@ -131,7 +131,8 @@
             android:id="@+id/recentWorkoutsRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/white"/>
 
         <TextView
             android:id="@+id/totalWorkoutsText"
